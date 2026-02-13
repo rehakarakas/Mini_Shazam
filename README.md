@@ -42,6 +42,18 @@ Using other formats may cause errors or incorrect fingerprint generation. Please
 
 ---
 
+### ⚠️ Version Compatibility
+This project is built using specific versions of the **SoundFingerprinting** libraries to ensure full compatibility with the MS SQL Server implementation.
+
+**Required Versions:**
+*   `SoundFingerprinting` **v5.2.2**
+*   `SoundFingerprinting.Audio.NAudio` **v5.2.2**
+*   `SoundFingerprinting.SQL` **v5.2.2**
+
+> **Warning:** Please **do not update** these NuGet packages to newer versions. Updating may cause breaking changes and database connectivity errors due to architectural differences in newer releases.
+>
+> ---
+
 ### Connection String
 Make sure the connection string in `App.config` matches your local SQL Server configuration. Note: If your SQL Server instance name is different (e.g., (local), localhost or (localdb)\MSSQLLocalDB), please update the Data Source=.\SQLEXPRESS value to match your specific server name found in SSMS. It should look like this:
 
