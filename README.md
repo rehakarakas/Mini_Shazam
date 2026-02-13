@@ -1,3 +1,18 @@
+# Screenshots
+
+Here is a preview of the Mini-Shazam application:
+
+### Home Page
+![Home Page](screenshots/homepage.png)
+
+### Database View
+![Database Management](screenshots/databasepage.png)
+
+### Info & About
+![Information Page](screenshots/infopage.png)
+
+---
+
 # Database Setup
 
 This application uses Microsoft SQL Server to store audio fingerprints and track metadata.
@@ -39,3 +54,11 @@ Make sure the connection string in `App.config` matches your local SQL Server co
              providerName="System.Data.SqlClient"/>
 	</connectionStrings>
 </configuration>
+```
+### Credits & Acknowledgments
+This project relies on the amazing work provided by the open-source community. Special thanks to:
+
+*   **[SoundFingerprinting](https://github.com/AddictedCS/soundfingerprinting)**: An efficient audio fingerprinting framework for .NET.
+*   **[SoundFingerprinting.SQL](https://github.com/AddictedCS/soundfingerprinting.sql)**: SQL Server storage provider for SoundFingerprinting framework.
+
+These libraries are used for the core audio analysis and database operations.
