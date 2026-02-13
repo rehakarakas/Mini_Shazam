@@ -26,3 +26,9 @@ Make sure the connection string in `App.config` matches your local SQL Server co
              providerName="System.Data.SqlClient"/>
 	</connectionStrings>
 </configuration>
+--------------------------------------------------------------------------------
+Audio File Format Requirement
+⚠️ Important: When adding or analyzing songs, only WAV format audio files are supported.
+• Supported format: .wav
+• Unsupported formats: .mp3, .flac, .aac, etc.
+Using other formats may cause errors or incorrect fingerprint generation. Please ensure that all audio files are converted to WAV format before using them in the application.
