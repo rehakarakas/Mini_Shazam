@@ -23,7 +23,7 @@ namespace Mini_Shazam
         }
         void TrackListele()
         {
-            baglanti = new SqlConnection("server=reha_karakas;Initial Catalog=FingerprintsDb;Integrated Security=SSPI;TrustServerCertificate=True");
+            baglanti = new SqlConnection("Server=.\\SQLEXPRESS;Initial Catalog=FingerprintsDb;Integrated Security=True;TrustServerCertificate=True");
             baglanti.Open();
             da = new SqlDataAdapter("SELECT * FROM Tracks", baglanti);
             DataTable tablo = new DataTable();
