@@ -49,9 +49,7 @@ Make sure the connection string in `App.config` matches your local SQL Server co
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
 	<connectionStrings>
-		<add name="FingerprintConnectionString" 
-             connectionString="Data Source=(local);Initial Catalog=FingerprintsDb;Integrated Security=True; Connection Timeout=15;" 
-             providerName="System.Data.SqlClient"/>
+		<add name="FingerprintConnectionString" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=FingerprintsDb;Integrated Security=True; Connection Timeout=15;" providerName="System.Data.SqlClient"/>
 	</connectionStrings>
 </configuration>
 ```
