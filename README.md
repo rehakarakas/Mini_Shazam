@@ -43,7 +43,7 @@ Using other formats may cause errors or incorrect fingerprint generation. Please
 ---
 
 ### Connection String
-Make sure the connection string in `App.config` matches your local SQL Server configuration. It should look like this:
+Make sure the connection string in `App.config` matches your local SQL Server configuration. Note: If your SQL Server instance name is different (e.g., (local), localhost or (localdb)\MSSQLLocalDB), please update the Data Source=.\SQLEXPRESS value to match your specific server name found in SSMS. It should look like this:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
