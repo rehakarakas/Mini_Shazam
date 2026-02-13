@@ -14,6 +14,19 @@ To create the required database and tables:
 4.  Execute the script.
 5.  The database **FingerprintsDb** and all required tables will be created automatically.
 
+---
+
+# Audio File Format Requirement
+
+**⚠️ Important:** When adding or analyzing songs, only **WAV** format audio files are supported.
+
+*   **Supported format:** `.wav`
+*   **Unsupported formats:** `.mp3`, `.flac`, `.aac`, etc.
+
+Using other formats may cause errors or incorrect fingerprint generation. Please ensure that all audio files are converted to WAV format before using them in the application.
+
+---
+
 ### Connection String
 Make sure the connection string in `App.config` matches your local SQL Server configuration. It should look like this:
 
@@ -26,9 +39,3 @@ Make sure the connection string in `App.config` matches your local SQL Server co
              providerName="System.Data.SqlClient"/>
 	</connectionStrings>
 </configuration>
---------------------------------------------------------------------------------
-Audio File Format Requirement
-⚠️ Important: When adding or analyzing songs, only WAV format audio files are supported.
-• Supported format: .wav
-• Unsupported formats: .mp3, .flac, .aac, etc.
-Using other formats may cause errors or incorrect fingerprint generation. Please ensure that all audio files are converted to WAV format before using them in the application.
